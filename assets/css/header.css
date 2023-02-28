@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container__imagem {
@@ -23,4 +24,22 @@
 
 .container__botao {
     display: none;
+}
+
+.lista-menu {
+    position: absolute;
+    top: 100%;
+    left: 51%;
+    width: 40vw;
+    background-color: var(--azul-escuro);
+    padding: 16px;
+}
+
+.lista-menu__item {
+    text-align: center;
+}
+
+.lista-menu__link {
+    color: var(--branco);
+    text-decoration: none;
 }

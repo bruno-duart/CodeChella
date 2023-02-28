@@ -2,10 +2,11 @@
 
 :root{
     --azul-escuro: #2E7BA2;
-    --fonte-principal: "Raleway"
+    --branco: #FFFFFF;
+    --fonte-principal: "Raleway";
 }
 
-.body {
+body {
     font-family: var(--fonte-principal);
     font-size: 16px;
 }

@@ -6,3 +6,6 @@ Tem como objetivo consolidar os conhecimentos obtidos durante os estudos, ao pas
 
 Neste projeto inicialmente serão utilizados somente HTML, CSS, Javascript, mas no decorrer das semanas é possível que frameworks sejam testados.
 
+Link do Figma do projeto:
+
+https://www.figma.com/file/2cDKA2Gj8Rj399OugL3Guy/CodeChella-%7C-Challenge-I---Front-end-2023-(Copy)?t=myZV2XkVtbX5fAEs-0
