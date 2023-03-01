@@ -28,6 +28,7 @@
     position: absolute;
     display: none;
     top: 100%;
+    right: 0;
     background-color: var(--azul-escuro);
 }
 
