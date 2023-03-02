@@ -4,6 +4,9 @@
 
 :root{
     --azul-escuro: #2E7BA2;
+    --amarelo: #FACF9D;
+    --mostarda: #DF9010;
+    --gradiente-verao: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
     --branco: #FFFFFF;
     --fonte-titulos: "Calistoga";
     --fonte-principal: "Raleway";
