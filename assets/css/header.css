@@ -27,7 +27,7 @@
 .lista-menu {
     position: absolute;
     display: none;
-    top: 100%;
+    top: 99%;
     right: 0;
     background-color: var(--azul-escuro);
 }
@@ -40,7 +40,46 @@
     gap: 0.5em;
 }
 
+.lista-menu__item:nth-child(-n+3){
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--branco);
+}
+
 .lista-menu__link {
     color: var(--branco);
+    font-weight: 700;
     text-decoration: none;
+}
+
+@media (min-width: 720px) {
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
+
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 3.75em;
+        gap: 1em;
+    }
+    
+    .lista-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .lista-menu__item:nth-child(-n+3) {
+        border: none;
+    }
+}
+
+@media (min-width:1440px) {
+    .container {
+        flex-direction: row;
+    }
 }
