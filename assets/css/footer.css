@@ -1,0 +1,46 @@
+.rodape {
+    background-color: var(--amarelo);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    gap: 2em;
+}
+
+.rodape__container__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.redes__texto {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.redes__lista-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.rodape__texto {
+    text-align: center;
+    line-height: 40px;
+}
