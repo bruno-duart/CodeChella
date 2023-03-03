@@ -2,6 +2,7 @@
     background-color: var(--amarelo);
     font-size: 20px;
     font-weight: 500;
+    color: var(--cinza);
 }
 
 .rodape__container {
@@ -28,11 +29,6 @@
     gap: 0.5em;
 }
 
-.redes__texto {
-    font-size: 20px;
-    font-weight: 500;
-}
-
 .redes__lista-menu {
     display: flex;
     justify-content: center;
@@ -43,4 +39,41 @@
 .rodape__texto {
     text-align: center;
     line-height: 40px;
+}
+
+.rodape__texto br {
+    display: none;
+}
+
+@media (min-width:720px) {
+    .redes {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1440px) {
+    .rodape__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 24px 120px;
+        gap: 16px;
+    }
+
+    .rodape__container__item {
+        flex-wrap: wrap;
+    }
+
+    .rodape__codechella {
+        align-items: flex-start;
+        margin: 2.25em 0;
+    }
+
+    .rodape__texto {
+        text-align: left;
+    }
+
+    .rodape__texto br {
+        display: block;
+        content: "";
+    }
 }
