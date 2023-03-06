@@ -39,3 +39,59 @@ body {
     font-size: 2em;
     color: var(--cinza);
 }
+
+.datas__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em 1.5em;
+}
+
+.datas__container__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+}
+
+.datas__titulo {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--cinza);
+}
+
+.datas__texto {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--cinza);
+}
+
+.datas__container__botao {
+    background-color: var(--azul-escuro);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    gap: 1em;
+    box-shadow: 4px 4px 0px var(--cinza);
+    border-radius: 1em;
+    width: 90%;
+}
+
+@media (min-width:760px) {
+    .banner {
+        height: 384px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .banner {
+        height: 407px;
+    }
+}
