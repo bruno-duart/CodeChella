@@ -34,9 +34,11 @@
         <section class="datas">
             <div class="datas__container">
                 <div class="datas__container__item datas__container__imagem">
-                    <!-- <img src="assets/img/PessoasGrade.png" alt="Pessoas na grade do festival" class="datas__imagem">
-                -->
-                    <h2>aqui vai uma imagem</h2>
+                    <picture>
+                        <source srcset="assets/img/PessoasGradeMin760px.svg" media="(min-width: 760px)">
+                        <img src="assets/img/PessoasGradeMin360px.svg" alt="Pessoas na grade do festival"
+                            class="datas__imagem">
+                    </picture>
                 </div>
                 <div class="datas__container__item">
                     <div class="datas__container__texto">
@@ -47,8 +49,9 @@
                                 com
                                 vários artistas e referências. Divirta-se!</p>
                             <a href="#" class="datas__container__botao">
-                                <span>Comprar ingresso!</span>
-                                <img src="assets/img/local_activity.svg" alt="Ícone de ingresso">
+                                <span class="datas__botao__texto">Comprar ingresso!</span>
+                                <img src="assets/img/local_activity.svg" alt="Ícone de ingresso"
+                                    class="datas__botao__icone">
                             </a>
                     </div>
                 </div>

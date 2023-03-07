@@ -17,6 +17,7 @@
 body {
     font-family: var(--fonte-principal);
     font-size: 16px;
+    background: var(--gradiente-verao);
 }
 
 .banner {
@@ -47,6 +48,10 @@ body {
     align-items: center;
     gap: 2em;
     padding: 2em 1.5em;
+}
+
+.datas__imagem {
+    border-radius: 16px;
 }
 
 .datas__container__texto {
@@ -81,7 +86,20 @@ body {
     gap: 1em;
     box-shadow: 4px 4px 0px var(--cinza);
     border-radius: 1em;
-    width: 90%;
+    width: 280px;
+    height: 56px;
+}
+
+.datas__botao__texto {
+    font-size: 20px;
+    color: var(--branco);
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.datas__botao__icone {
+    width: 32px;
+    height: 40px;
 }
 
 @media (min-width:760px) {
@@ -93,5 +111,10 @@ body {
 @media (min-width: 1440px) {
     .banner {
         height: 407px;
+    }
+    .datas__container{
+        flex-direction: row;
+        padding: 4em 7.5em;
+        gap: 4em;
     }
 }
