@@ -102,6 +102,68 @@ body {
     height: 40px;
 }
 
+.line-up {
+    text-align: center;
+}
+
+.line-up__titulo {
+    font-family: var(--fonte-titulos);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--cinza);
+    padding: 32px 24px;
+}
+
+.line-up__day {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px;
+    gap: 48px;
+}
+
+.line-up__day__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+
+.line-up__day__top-heading {
+    font-family: var(--fonte-titulos);
+    font-weight: 400;
+    font-size: 32px;
+    padding: 16px;
+    background-color: var(--mostarda);
+    color: var(--branco);
+    text-transform: uppercase;
+}
+
+.line-up__day__top-bar {
+    color: var(--mostarda);
+    display: none;
+}
+
+.line-up__day__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.line-up__day__list__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.line-up__day__items:nth-child(1){
+    
+}
+
 @media (min-width:760px) {
     .banner {
         height: 384px;
