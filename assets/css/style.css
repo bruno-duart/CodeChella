@@ -1,5 +1,7 @@
 @import url("header.css");
 @import url("footer.css");
+@import url("experiencia.css");
+
 
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap');
 
@@ -20,8 +22,11 @@ body {
     min-height: 100vh;
 }
 
-.banner {
+.banner-home {
     background: url("../img/Summer.png");
+}
+
+.banner {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -221,6 +226,10 @@ main {
 @media (min-width:760px) {
     .banner {
         height: 384px;
+    }
+
+    .banner__titulo {
+        font-size: 64px;
     }
 
     .list-items__double-line {
