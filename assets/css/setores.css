@@ -1,0 +1,147 @@
+.banner-setores {
+    background-image: url("../img/Banner-mapa_de_setores.png");
+}
+
+.mapa-setores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    color: var(--cinza);
+}
+
+.mapa-setores__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.mapa-setores__imagem {
+    width: 100%;
+}
+
+.mapa-setores__container__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.mapa-setores__legenda {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.mapa-setores__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.mapa-setores__lista__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px;
+    gap: 32px;
+    color: var(--cinza);
+}
+
+.detalhes__titulo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.detalhes__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+
+.detalhes__container__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+
+.detalhes__container__imagem {
+    width: 312px;
+    height: 239px;
+    border-radius: 16px;
+}
+
+.detalhes__container__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.detalhes__container__texto h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+}
+
+.detalhes__container__texto p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
+@media (min-width:760px) {
+    .mapa-setores {
+        padding: 32px 60px;
+        gap: 32px;
+    }
+
+    .mapa-setores__container {
+        gap: 48px;
+    }
+
+    .mapa-setores__legenda {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .mapa-setores {
+        padding: 32px 120px;
+    }
+
+    .mapa-setores__container {
+        flex-direction: row;
+        width: 1200px;
+        height: 609px;
+    }
+
+    .mapa-setores__imagem {
+        max-width: 690px;
+        height: 100%;
+    }
+}
