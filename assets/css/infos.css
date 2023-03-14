@@ -1,3 +1,99 @@
 .banner-infos {
     background-image: url("../img/Banner-infos-gerais.png");
 }
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 24px;
+    gap: 48px;
+}
+
+.faq__titulo {
+    font-family: var(--fonte-titulos);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    color: var(--cinza);
+    text-align: center;
+}
+
+.faq__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+}
+
+.faq__lista__item {
+    width: 100%;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border: none;
+}
+
+.faq__lista__titulo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left;
+}
+
+.faq__lista__arrow-down {
+    background-image: url("../img/arrow_drop_down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+}
+
+.panel {
+    background-color: var(--azul-claro);
+    padding: 16px;
+}
+
+.panel p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--cinza);
+}
+
+.panel li {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--cinza);
+}
+
+@media (min-width: 760px) {
+    .faq {
+        padding: 48px 60px;
+        gap: 48px;
+    }
+
+    .faq__lista {
+        gap: 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .faq {
+        padding: 48px 120px;
+    }
+
+    .faq__lista {
+        max-width: 996px;
+    }
+}
