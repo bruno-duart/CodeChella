@@ -144,4 +144,33 @@
         max-width: 690px;
         height: 100%;
     }
+
+    .detalhes {
+        padding: 48px 120px;
+    }
+
+    .detalhes__container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+        gap: 24px;
+        height: 631px;
+    }
+
+    .detalhes__container__item {
+        width: 383px;
+    }
+
+    .detalhes__container__imagem {
+        width: 100%;
+    }
+    .detalhes__container__item--middle {
+        align-self: flex-end;
+    }
+
+    .detalhes__container__item p {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
 }
