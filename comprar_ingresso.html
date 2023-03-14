@@ -31,7 +31,28 @@
     <section class="banner banner-comprar-ingresso">
         <h2 class="banner__titulo">Garanta seu ingresso!</h2>
     </section>
+    <main>
+        <section class="comprar-ingresso">
+            <h3>Preencha o formulário a seguir</h3>
+            <form>
+                <label for="nome-completo">Nome Completo:
+                    <input id="nome-completo" type="text">
+                </label>
 
+                <label for="email">Email:
+                    <input id="email" type="email">
+                </label>
+
+                <label for="tipo-ingresso">Tipo de ingresso:
+                    <select id="tipo-ingresso" name="tipo-ingresso">
+                        <option value="" disabled selected>Tipo de ingresso</option>
+                        <option value="inteira">Inteira</option>
+                        <option value="meia">Meia</option>
+                    </select>
+                </label>
+            </form>
+        </section>
+    </main>
     <footer class="rodape">
         <div class="rodape__container">
             <div class="rodape__container__item rodape__codechella">
