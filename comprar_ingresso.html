@@ -8,6 +8,7 @@
     <title>CodeChella - Comprar Ingresso</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/Símbolo-cinza 1.svg">
 </head>
 
 <body>
@@ -33,23 +34,33 @@
     </section>
     <main>
         <section class="comprar-ingresso">
-            <h3>Preencha o formulário a seguir</h3>
-            <form>
-                <label for="nome-completo">Nome Completo:
+            <h3>Preencha o formulário a seguir:</h3>
+            <form class="comprar-ingresso__form">
+                <div class="comprar-ingresso__form__item">
+                    <label for="nome-completo">Nome Completo:</label>
                     <input id="nome-completo" type="text">
-                </label>
+                </div>
 
-                <label for="email">Email:
+                <div class="comprar-ingresso__form__item">
+                    <label for="email">Email: </label>
                     <input id="email" type="email">
-                </label>
-
-                <label for="tipo-ingresso">Tipo de ingresso:
+                </div>
+                <div class="comprar-ingresso__form__item">
+                    <label for="tipo-ingresso">Tipo de ingresso: </label>
                     <select id="tipo-ingresso" name="tipo-ingresso">
                         <option value="" disabled selected>Tipo de ingresso</option>
                         <option value="inteira">Inteira</option>
                         <option value="meia">Meia</option>
                     </select>
-                </label>
+                </div>
+                <div class="comprar-ingresso__form__item">
+                    <label for="data-nascimento">Data de nascimento: </label>
+                    <input type="date" name="data-nascimento" id="data-nascimento">
+                </div>
+                <button class="comprar-ingresso__form__botao">
+                    <span>Avançar</span>
+                    <i></i>
+                </button>
             </form>
         </section>
     </main>

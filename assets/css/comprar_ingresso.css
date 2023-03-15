@@ -1,3 +1,144 @@
 .banner-comprar-ingresso {
     background-image: url("../img/Banner-garanta-seu-ingresso.png");
 }
+
+.comprar-ingresso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 24px;
+    gap: 48px;
+}
+
+.comprar-ingresso h3 {
+    font-family: var(--fonte-titulos);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.comprar-ingresso__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    gap: 32px;
+    width: 100%;
+}
+
+.comprar-ingresso__form__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    width: 100%;
+}
+
+.comprar-ingresso__form__item label {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.comprar-ingresso__form__item input,
+.comprar-ingresso__form__item select {
+    align-self: stretch;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    padding: 10px;
+    border: none;
+}
+
+.comprar-ingresso__form__botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 8px 16px;
+    gap: 16px;
+    box-shadow: 4px 4px 0px var(--preto);
+    border-radius: 16px;
+    background-color: var(--azul-escuro);
+    width: 164px;
+    height: 56px;
+}
+
+.comprar-ingresso__form__botao span {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.comprar-ingresso__form__botao i {
+    background-image: url("../img/to-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 40px;
+}
+
+@media (min-width: 760px) {
+    .comprar-ingresso {
+        padding: 48px 60px;
+    }
+
+    .comprar-ingresso h3 {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 62px;
+    }   
+
+    .comprar-ingresso__form__item:nth-child(4) input {
+        width: 453px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .comprar-ingresso {
+        padding: 48px 120px;
+    }
+
+    .comprar-ingresso__form {
+        display: grid;
+        max-width: 795px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "first-item first-item"
+            "second-item second-item"
+            "third-item fourth-item"
+            "button button";
+        justify-content: center;
+    }
+
+    .comprar-ingresso__form__item:first-child {
+        grid-area: first-item;
+    }
+
+    .comprar-ingresso__form__item:nth-child(2) {
+        grid-area: second-item;
+    }
+
+    .comprar-ingresso__form__item:nth-child(3) {
+        grid-area: third-item;
+    }
+
+    .comprar-ingresso__form__item:nth-child(4) {
+        grid-area: fourth-item;
+    }
+
+    .comprar-ingresso__form__botao {
+        grid-area: button;
+        justify-self: center;
+    }
+
+    .comprar-ingresso__form__item:nth-child(4) input {
+        width: auto;
+    }
+}

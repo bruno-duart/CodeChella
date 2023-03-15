@@ -7,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    color: var(--cinza);
 }
 
 .mapa-setores__container {
@@ -60,7 +59,6 @@
     align-items: center;
     padding: 32px 24px;
     gap: 32px;
-    color: var(--cinza);
 }
 
 .detalhes__titulo {
