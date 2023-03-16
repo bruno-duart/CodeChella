@@ -1,3 +1,66 @@
 .banner-ingresso {
     background-image: url("../img/Banner-ingresso.png");
 }
+
+.ingresso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 24px;
+}
+
+.ingresso__ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 32px;
+}
+
+.ticket__titulo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.ticket__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 32px;
+    background: var(--gradiente-verao);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ticket__container__festival-nome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.ticket__container__festival-nome span {
+    background-image: url("../img/simbolo-branco.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.ticket__container__dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+
+.qr_code {
+    width: 100%;
+    
+}
