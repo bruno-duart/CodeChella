@@ -23,6 +23,8 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+    align-self: stretch;
+    text-align: center;
 }
 
 .ticket__container {
@@ -40,7 +42,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
+    align-self: stretch;
 }
 
 .ticket__container__festival-nome span {
@@ -61,6 +63,53 @@
 }
 
 .qr_code {
-    width: 100%;
-    
+    width: 60vw;
+    margin: 2em;
+}
+
+.ticket__container__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+}
+
+.ticket__container__portador {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.ticket__container__info__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket__info__list__item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+@media (min-width: 760px) {
+    .ingresso {
+        padding: 0;
+    }
+
+    .ingresso__ticket {
+        padding: 64px 60px;
+    }
+
+    .ticket__container {
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .qr_code {
+        
+    }
 }
