@@ -60,9 +60,6 @@
     align-items: flex-end;
     padding: 8px 16px;
     gap: 16px;
-    box-shadow: 4px 4px 0px var(--preto);
-    border-radius: 16px;
-    background-color: var(--azul-escuro);
     width: 164px;
     height: 56px;
 }

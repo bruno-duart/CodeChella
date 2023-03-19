@@ -10,6 +10,7 @@
 
 :root {
     --azul-claro: #C8DEEF;
+    --azul: #519EC5;
     --azul-escuro: #2E7BA2;
     --amarelo: #FACF9D;
     --mostarda: #DF9010;
@@ -44,6 +45,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .banner__titulo {
     font-family: var(--fonte-titulos);
@@ -90,17 +93,25 @@ main {
 }
 
 .datas__container__botao {
-    background-color: var(--azul-escuro);
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     padding: 0.5em 1em;
     gap: 1em;
-    box-shadow: 4px 4px 0px var(--cinza);
-    border-radius: 1em;
     width: 280px;
     height: 56px;
+}
+
+.button {
+    background-color: var(--azul-escuro);
+    box-shadow: 4px 4px 0px var(--cinza);
+    border: none;
+    border-radius: 1em;
+}
+
+.button:hover {
+    background-color: var(--azul);
 }
 
 .datas__botao__texto {
@@ -245,8 +256,9 @@ main {
         height: 0px;
         flex-grow: 1;
     }
+
     .line-up__day__top-heading {
-        font-size:48px;
+        font-size: 48px;
         line-height: 62px;
         width: fit-content;
     }
