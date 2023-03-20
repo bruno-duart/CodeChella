@@ -25,6 +25,7 @@
     align-items: flex-start;
     padding: 0;
     gap: 8px;
+    width: 100%;
 }
 
 .faq__lista__item {
@@ -41,6 +42,17 @@
     background-color: var(--azul-escuro);
     color: var(--branco);
     border: none;
+    cursor: pointer;    
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: var(--azul);
 }
 
 .faq__lista__titulo {
@@ -61,6 +73,8 @@
 .panel {
     background-color: var(--azul-claro);
     padding: 16px;
+    display: none;
+    overflow: hidden;
 }
 
 .panel p {
@@ -74,6 +88,8 @@
     font-size: 20px;
     line-height: 40px;
 }
+
+
 
 @media (min-width: 760px) {
     .faq {
