@@ -38,12 +38,16 @@
             <form class="comprar-ingresso__form">
                 <div class="comprar-ingresso__form__item">
                     <label for="nome-completo">Nome Completo:</label>
-                    <input id="nome-completo" type="text">
+                    <input id="nome-completo" type="text" required minlength="10">
                 </div>
 
                 <div class="comprar-ingresso__form__item">
                     <label for="email">Email: </label>
-                    <input id="email" type="email">
+                    <input id="email" type="email" placeholder="mail@domain.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                </div>
+                <div class="comprar-ingresso__form__item">
+                    <label for="email">CPF: </label>
+                    <input id="cpf" type="text" placeholder="xxx.xxx.xxx-xx" required>
                 </div>
                 <div class="comprar-ingresso__form__item">
                     <label for="tipo-ingresso">Tipo de ingresso: </label>
