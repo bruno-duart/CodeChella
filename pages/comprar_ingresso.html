@@ -35,7 +35,7 @@
     <main>
         <section class="comprar-ingresso">
             <h3>Preencha o formulário a seguir:</h3>
-            <form class="comprar-ingresso__form">
+            <form class="comprar-ingresso__form" id="formulario">
                 <div class="comprar-ingresso__form__item">
                     <label for="nome-completo">Nome Completo:</label>
                     <input id="nome-completo" type="text" required minlength="10">
@@ -52,16 +52,19 @@
                 <div class="comprar-ingresso__form__item">
                     <label for="tipo-ingresso">Tipo de ingresso: </label>
                     <select id="tipo-ingresso" name="tipo-ingresso" required>
-                        <option value="" disabled selected>Tipo de ingresso</option>
-                        <option value="inteira">Inteira</option>
-                        <option value="meia">Meia</option>
+                        <option value="" disabled selected>Tipo de ingresso</option>                        
+                        <option value="Pista - Premium">Pista - Premium</option>
+                        <option value="Pista - comum">Pista - Comum</option>
+                        <option value="Cadeiras - Premium">Cadeiras - Premium</option>
+                        <option value="Cadeiras - Comum">Cadeiras - Comum</option>
+                        <option value="Rampas">Rampas</option>
                     </select>
                 </div>
                 <div class="comprar-ingresso__form__item">
                     <label for="data-nascimento">Data de nascimento: </label>
                     <input type="date" name="data-nascimento" id="data-nascimento" required>
                 </div>
-                <button class="comprar-ingresso__form__botao button" id="submit">
+                <button type="submit" class="comprar-ingresso__form__botao button" id="submit">
                     <span>Avançar</span>
                     <i></i>
                 </button>
